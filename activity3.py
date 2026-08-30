@@ -1,0 +1,13 @@
+# Creating different variables 
+x = 5
+y ="Japjeet"
+print(x)
+print(y)
+
+codingal = "codingal"
+print(codingal)
+
+#user input
+name=input("enter your name: ")
+
+print("\nHello", name, "\nWelcome to codingal")
