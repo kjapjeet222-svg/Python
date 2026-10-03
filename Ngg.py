@@ -1,3 +1,5 @@
+import random  
+
 secret = random.randint(1, 50)
 attempts = 5
 won = False
@@ -6,7 +8,6 @@ print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 50. You have 5 attempts.")
 
 while attempts > 0 and not won:
-  
     guess = int(input("\nEnter your guess: "))
     
     if guess == secret:
@@ -27,12 +28,10 @@ while attempts > 0 and not won:
             
         print(f"Wrong guess! You are {hint}.")
         
-      
         print("Remaining lives: ", end="")
         for _ in range(attempts):
-            print("", end="")
-        print() 
-
+    
+     print() 
 
 if not won:
     print(f"\nGame Over! You ran out of attempts. The secret number was {secret}.")
